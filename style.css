@@ -9,14 +9,60 @@
     --white: #fff;
     --Slightly-transparent-white: #ffffffbf;
     --Slightl-transparent-stat-headings: hsla(0, 0%, 100%, 0.6);
+    --header-bold: "Inter", sans-serif;
+    --normal-text: "Lexend Deca", sans-serif;
 }
 body {
     background-color: var(--very-dark-blue-bg);
+
 }
 .card_container {
     background-color: var(--card-background);
-    width: 60%;
-    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 150px auto;
+    border-radius: 10px;
+}
+.card_content {
+    width: 50%;
+    height: auto;
+    padding: 40px;
+    margin-right: 60px;
+}
+.card_content h1 {
+    font-family: var(--header-bold);
+    color: var(--white);
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.card_content p {
+    color: var(--Slightly-transparent-white);
+    font-family: var(--normal-text);
+    padding-bottom: 30px;
+}
+.card_content span {
+    color: var(--Soft-violet-accent);
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: var(--header-bold);
+    color: var(--white);
+}
+.stats strong {
+    display: block;
+}
+.card_img {
+    background-image: url('./images/image-header-desktop.jpg');
+    background-size: cover;
+    background-position:  center;
+    height: auto;
+    width: 50%;
 }
 .attribution { 
     font-size: 15px; 
