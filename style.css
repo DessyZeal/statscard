@@ -27,11 +27,13 @@ body {
     background-color: var(--card-background);
     width: 80%;
     max-width: 1000px;
+    min-width: 320px;
     display: flex;
     justify-content: center;
     overflow: hidden;
     margin: 150px auto;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 .card_content {
     width: 50%;
@@ -50,7 +52,7 @@ body {
 .card_content p {
     color: var(--Slightly-transparent-white);
     font-family: var(--normal-text);
-    padding-bottom: 30px;
+    padding: 25px 0;
 }
 .card_content span {
     color: var(--Soft-violet-accent);
@@ -62,6 +64,7 @@ body {
     font-size: 15px;
     font-family: var(--header-bold);
     color: var(--Slightly-transparent-white);
+    padding-top: 2rem;
 }
 .stats strong {
     display: block;
@@ -102,6 +105,7 @@ body {
         align-items: center;
     }
 }
-@media (max-width:) {
-    
+@media (max-width:480px) {
+    .card_container {
+    }
 }
